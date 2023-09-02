@@ -251,7 +251,7 @@ font-family: 'Roboto Mono', monospace;
 
                               /* knowleade section*/
                               
-#knowleage{
+#knowledge{
     display: block-flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -311,7 +311,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 @media(max-width:800px){
-    #knowleage{
+    #knowledge{
       padding: 0 1.5rem 3rem 1.5rem;
     }
     .first , .second , .third{
@@ -324,7 +324,7 @@ font-family: 'Roboto Mono', monospace;
   
 }
 @media(max-width:375px){
-    #knowleage{
+    #knowledge{
       border-radius: 5rem;
     }
     .sectionK{
