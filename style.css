@@ -1,0 +1,398 @@
+@import   url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto+Mono:ital,wght@0,700;1,500&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid rd;
+}  
+html{
+  scroll-behavior:smooth;
+  scroll-padding:10rem ;
+}
+body{
+    background-color: black;
+    font-size: 15px;
+}
+
+
+                                        /* nav Section */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000000;
+}
+h1 a{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;    
+    color: #55ff82;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    list-style-type: none;
+}
+header a{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;       
+    text-decoration: none;
+    color: #ffffff;
+    transition:  color 0.3s;
+}  
+header a:hover{
+  color: #55ff82;
+}
+   
+@media (max-width: 504px){
+    nav{
+        display: flex;
+        flex-direction: column;   
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        margin-top: 2rem;
+        gap:0.8rem;
+    }
+    
+}
+
+                      /* main section */
+main{  
+
+}
+.ID{
+  background-image: url('img/layered-steps-haikei (1).png');
+  background-size: cover;
+  background-postion:right;
+  background-repeat: no-repeat;
+}
+.photoMain{
+  margin: 3rem 0 0 4rem   ;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  text-transform: none;
+}
+.photoMain span{
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  color: whitesmoke;
+  text-transform: none;
+  font-size: 1.7rem;
+  margin-left:  2rem;  
+  text-shadow: 3px 3px 4px #00ff03;
+  animation: fromLeft 1.5s ease-in-out 0s  ;
+}
+@keyframes fromLeft  {
+  from {transform: translateY(-20rem);}
+  to {transform: translateY(0);}
+}
+.ID img{
+
+   width:12rem ;
+   border-radius: 50%;
+   border:2px solid #95ffcc ;
+   transition: transform 0.3s;
+   animation: opImg 1.5s ease-in-out 0s  ;
+ }
+ @keyframes opImg {
+   from { opacity: 0;}
+   to {opacity: 1;}
+ }
+ .ID img:hover{
+   transform: scale(1.3);
+ }
+.ID p{
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: whitesmoke;
+  width: 40rem;
+  padding: 1rem 7rem 2rem 3rem;
+  text-transform: capitalize;
+  font-family: 'Lilita One', cursive;
+  text-shadow: 3px 3px 4px #00ff03;
+  animation: pLeft 1.5s ease-in-out 0s  ;
+}
+@keyframes pLeft{
+  from {transform: translateX(-40rem);}
+  to   {transform: translateX(0);}
+} {
+  
+}
+@media (max-width:800px){
+     .ID{
+       background-image: url('img/layered-steps-haikei (2).png');
+     }
+    .photoMain{
+      margin: 1rem 0 0 1rem;
+    }
+    .photoMain span{
+      display: inline-flex;
+      text-align: center;
+    }
+     .ID p{
+     padding: 1rem;
+       width: 100dvw;
+       justify-content: center;
+       text-align: start;
+     }
+}
+
+#about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border:3px solid white;
+  border-radius: 2rem;
+  box-shadow: -10px -10px 20px #95ffb7 , 10px 10px 20px #95ffb7;
+  filter: blur(0.5);
+  margin: 12rem 2rem;
+  padding: 2rem 4rem;
+  color: white;
+}
+ #about span{
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: 1px solid white;
+  padding: 0 3rem 1rem 3rem;
+  }
+#about p{
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 2rem;
+  font-family: 'Lilita One', cursive;
+  font-weight: 400;
+}
+#about input[type="text"]{
+  width: 35dvw;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 0.2rem solid white;
+  border-radius: 0.4rem;
+}
+#about input[type="button"]{
+  width: 20dvw;
+  padding: 0.5rem ;
+  margin-top: 1rem;
+  margin-left:1rem ;
+  border: 0.2rem solid white;
+  border-radius: 0.4rem;
+  background-color: #54c9a0;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s;
+  
+}
+#about input[type="button"]:hover{
+  background-color: #0094707d;
+  box-shadow: 3px 3px 5px  #54c9a0 , -3px -3px 5px  #54c9a0;
+  
+}
+#about input[type="button"]:active{
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+@media (max-width:500px){
+    #about{
+      padding: 1rem 2rem;
+    }
+    .ID p{
+      font-size: 0.8rem;
+    }
+    #about span{
+      font-size: 1.7rem;
+      padding: 0 2rem 1rem 2rem;
+    }
+    #about p{
+      font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width:500px){
+  #about input[type="button"]{
+      margin-left: 0;
+      width: 80dvw;
+    }
+    #about input[type="text"]{
+      margin: 0; 
+      width: 80dvw;
+    }
+     .first , .second , .third{
+      margin: 2rem 0rem;
+    }
+}
+
+                              /* knowleade section*/
+                              
+#knowleage{
+    display: block-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0rem 3rem 3rem 3rem;
+    margin: 12rem 3rem ;
+    border-radius: 5rem 5rem 5rem 0;
+    background-color:#d5ffdf;
+}
+.sectionK{
+  width: fit-content;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  padding: 1rem;
+  position: relative;
+  bottom: 2rem;
+  color: white;
+  background-color: #3fbd60;
+  border-right:1px solid gray ;
+  border-bottom: 1px solid gray;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px black ;
+  z-index: 0;
+}
+.whiteBord{
+   background-color: black;
+   height: 1.5rem;
+   width: 30dvw;
+   border-radius:2rem;
+   border: 1px solid black;
+}
+
+.first , .second , .third{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+.result1{
+  background: linear-gradient(to right , #f6f6f6, #55ff97)  ;
+  height: 100%;
+  width: 85%;
+  border-radius: 2rem;
+}
+.result2{
+  background: linear-gradient(to right , #f6f6f6 , #55ff97)  ;
+  height: 100%;
+  width: 80%;
+  border-radius: 2rem;
+}
+.result3{
+  background: linear-gradient(to right , #f6f6f6 , #55ff97)  ;
+  height: 100%;
+  width: 50%;
+  border-radius: 2rem;
+}
+
+@media(max-width:800px){
+    #knowleage{
+      padding: 0 1.5rem 3rem 1.5rem;
+    }
+    .first , .second , .third{
+      margin: 2rem 1rem ;
+      justify-content: space-between;
+    }
+    .whiteBord{
+      width: 50dvw;
+    }
+  
+}
+@media(max-width:375px){
+    #knowleage{
+      border-radius: 5rem;
+    }
+    .sectionK{
+      left: 1rem;
+    }
+    .whiteBord{
+      width: 70dvw;
+    }
+     .first , .second , .third{
+      margin: 2rem  0.2rem;
+    }
+}
+
+                             /*footer section*/
+
+#End{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  margin: 15rem 0 0 0;
+  color: white;
+  background: url('img/layered-waves-haikei (1).png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.foot{
+  align-items: start;
+  margin: 3rem 2rem 3rem 0;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 3rem 0;
+}
+.ph ,.em{
+  display: flex;
+  font-family: 'Lilita One', cursive;
+  gap:1rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+.social{
+  display: flex;
+  gap:1rem;
+  margin: 0 0 0 2rem;
+  align-items: center;
+}
+.social a{
+  color: white;
+}
+.face , #whats ,.dis{
+  transition: all 0.3s;
+}
+.face:hover{
+  color: #2d5088;
+  transform: translateY(-5px);
+}
+#whats:hover{
+  color:#00a00f ;
+  transform: translateY(-5px);
+}
+.dis:hover{
+  color:#4c009e ;
+  transform: translateY(-5px);
+}
